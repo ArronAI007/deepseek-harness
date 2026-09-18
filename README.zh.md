@@ -28,6 +28,23 @@ npx @deepseek-ai/dsh web
 
 该命令默认会在 `http://127.0.0.1:3080` 启动 Web UI，本机启动时还会用默认浏览器打开页面。通过 SSH 启动时只打印宿主机 URL，因为本地转发地址由 SSH 客户端或编辑器持有。传入 `--no-open` 可仅运行服务器而不打开浏览器。详见 [Web UI 指南](docs/user/guide/index.zh.md)。
 
+<a id="install-globally"></a>
+
+### 全局安装
+
+如果不想每次都通过 `npx` 调用，可以全局安装 `dsh` 命令：
+
+```sh
+npm install -g @deepseek-ai/dsh
+```
+
+安装完成后进行验证：
+
+```sh
+dsh --version
+dsh web
+```
+
 <a id="run-from-source"></a>
 
 ### 从源码运行

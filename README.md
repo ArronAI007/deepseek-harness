@@ -26,6 +26,21 @@ npx @deepseek-ai/dsh web
 
 The command starts the Web UI at `http://127.0.0.1:3080` by default and opens it in the default browser for a local launch. An SSH launch only prints the host URL because the SSH client or editor owns the local forwarded address. Pass `--no-open` to run the server without opening a browser. See [Web UI guide](docs/user/guide/index.md).
 
+### Install globally
+
+To install the `dsh` command instead of invoking it through `npx` each time:
+
+```sh
+npm install -g @deepseek-ai/dsh
+```
+
+Verify the install:
+
+```sh
+dsh --version
+dsh web
+```
+
 ### Run from source
 
 To run from a repository checkout:
